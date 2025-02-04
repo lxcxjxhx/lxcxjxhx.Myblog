@@ -1,62 +1,107 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post-collapse.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>归档：2025/2 | lxcxjxhx &#39;s BLOG | record</title>
 
-{% block title %}{{ __('title.archive') }} | {{ config.title }}{% endblock %}
+  
+  <meta name="author" content="lxcxjxhx">
+  
 
-{% block page_class %} page-archive {% endblock %}
+  
 
-{% block content %}
+  
 
-  {#####################}
-  {### ARCHIVE BLOCK ###}
-  {#####################}
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-      <span class="archive-page-counter">
-        {% set cheers %}
-        {% set posts_length = site.posts.length %}
-        {% if posts_length > 210 %} {% set cheers = 'excellent' %}
-          {% elif posts_length > 130 %} {% set cheers = 'great' %}
-          {% elif posts_length > 80 %} {% set cheers = 'good' %}
-          {% elif posts_length > 50 %} {% set cheers = 'nice' %}
-          {% elif posts_length > 30 %} {% set cheers = 'ok' %}
-        {% else %}
-          {% set cheers = 'um' %}
-        {% endif %}
-        {{ __('cheers.' + cheers) }}! {{ _p("counter.archive_posts", site.posts.length) }} {{ __('keep_on') }}
-      </span>
+  
 
-      {% for post in page.posts %}
+  <meta property="og:site_name" content="lxcxjxhx &#39;s BLOG"/>
 
-        {# Show year #}
-        {% set year %}
-        {% set post.year = date(post.date, 'YYYY') %}
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
 
-        {% if post.year !== year %}
-          {% set year = post.year %}
-          <div class="collection-title">
-            <h2 class="archive-year motion-element" id="archive-year-{{ year }}">{{ year }}</h2>
-          </div>
-        {% endif %}
-        {# endshow #}
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="lxcxjxhx &#39;s BLOG" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+<meta name="generator" content="Hexo 7.3.0"></head>
 
-        {{ post_template.render(post) }}
 
-      {% endfor %}
+<body>
+<div class="blog">
+  <div class="content">
 
-    </div>
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">lxcxjxhx &#39;s BLOG</a>
+    </h1>
+    <p class="site-description">record</p>
   </div>
-  {#########################}
-  {### END ARCHIVE BLOCK ###}
-  {#########################}
+  <nav class="site-navigation">
+    <ul>
+      
+    </ul>
+  </nav>
+</header>
 
-  {% include '_partials/pagination.swig' %}
+    <main class="site-main posts-loop">
+    
 
-{% endblock %}
+<article>
 
-{% block sidebar %}
-  {{ sidebar_template.render(false) }}
-{% endblock %}
+  <h2 class="article-title ">2025/2</h2>
+
+  <div class="archive">
+    
+      <div class="post archive">
+        <div class="archive-post">
+          <time datetime="2025-02-04T15:09:27.000Z">
+            <a href="/2025/02/04/Reading-Record/">2025-02-04</a>
+          </time>
+          
+            <h3 class="archive-title"><a href="/2025/02/04/Reading-Record/"><span>Reading_Record</span></a></h3>
+          
+        </div>
+      </div>
+    
+      <div class="post archive">
+        <div class="archive-post">
+          <time datetime="2025-02-04T15:08:35.000Z">
+            <a href="/2025/02/04/Website-Overview/">2025-02-04</a>
+          </time>
+          
+            <h3 class="archive-title"><a href="/2025/02/04/Website-Overview/"><span>Website_Overview</span></a></h3>
+          
+        </div>
+      </div>
+    
+    <nav class="pagination">
+  
+  
+</nav>
+  </div>
+
+</article>
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2025 lxcxjxhx
+    
+  </p>
+</footer>
+    
+    
+  </div>
+</div>
+</body>
+</html>

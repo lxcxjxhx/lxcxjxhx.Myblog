@@ -1,25 +1,176 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %} {# 这一行删除即可得到空白的主页 #}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>lxcxjxhx &#39;s BLOG | record</title>
 
-{% block title %}{{ config.title }}{% if theme.index_with_subtitle and config.subtitle %} - {{config.subtitle }}{% endif %}{% endblock %}
+  
+  <meta name="author" content="lxcxjxhx">
+  
 
-{% block page_class %}
-  {% if is_home() %} page-home {% endif %}
-{% endblock %}
+  
 
-{% block content %}
-  <section id="posts" class="posts-expand">
-    {% for post in page.posts %}
-      {% if post.password == '' %}
-        {{ post_template.render(post, true) }}
-      {% endif %}
-    {% endfor %}
-  </section>
+  
 
-  {% include '_partials/pagination.swig' %}
-{% endblock %}
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-{% block sidebar %}
-  {{ sidebar_template.render(false) }}
-{% endblock %}
+  
+
+  <meta property="og:site_name" content="lxcxjxhx &#39;s BLOG"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="lxcxjxhx &#39;s BLOG" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">lxcxjxhx &#39;s BLOG</a>
+    </h1>
+    <p class="site-description">record</p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/2025/02/04/Reading-Record/"><span>Reading_Record</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2025/02/04/Reading-Record/" rel="bookmark">
+        <time class="entry-date published" datetime="2025-02-04T15:09:27.000Z">
+          2025-02-04
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/2025/02/04/Website-Overview/"><span>Website_Overview</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2025/02/04/Website-Overview/" rel="bookmark">
+        <time class="entry-date published" datetime="2025-02-04T15:08:35.000Z">
+          2025-02-04
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>2025/2/2 lbloglxcxjxhx.us.kg 注册成功<p>
+<p>2025/2/4 lxcxjxhx's BLOG 网站建立<br>第一次上传阅读记录<p>
+
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/Website-Overview/">Website_Overview</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+
+<nav class="pagination">
+  
+  
+</nav>
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2025 lxcxjxhx
+    
+  </p>
+</footer>
+    
+    
+  </div>
+</div>
+</body>
+</html>

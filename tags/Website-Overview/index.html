@@ -1,37 +1,96 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post-collapse.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Website_Overview | lxcxjxhx &#39;s BLOG | record</title>
 
-{% block title %}{{ __('title.tag') }}: {{ page.tag }} | {{ config.title }}{% endblock %}
+  
+  <meta name="author" content="lxcxjxhx">
+  
 
-{% block content %}
+  
 
-  {#################}
-  {### TAG BLOCK ###}
-  {#################}
-  <div class="post-block tag">
+  
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <{% if theme.seo %}h2{% else %}h1{% endif %}>{#
-        #}{{ page.tag }}{#
-        #}<small>{{  __('title.tag')  }}</small>
-        </{% if theme.seo %}h2{% else %}h1{% endif %}>
-      </div>
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-      {% for post in page.posts %}
-        {{ post_template.render(post) }}
-      {% endfor %}
-    </div>
+  
 
+  <meta property="og:site_name" content="lxcxjxhx &#39;s BLOG"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="lxcxjxhx &#39;s BLOG" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">lxcxjxhx &#39;s BLOG</a>
+    </h1>
+    <p class="site-description">record</p>
   </div>
-  {#####################}
-  {### END TAG BLOCK ###}
-  {#####################}
+  <nav class="site-navigation">
+    <ul>
+      
+    </ul>
+  </nav>
+</header>
 
-  {% include '_partials/pagination.swig' %}
-{% endblock %}
+    <main class="site-main posts-loop">
+    
 
-{% block sidebar %}
-  {{ sidebar_template.render(false) }}
-{% endblock %}
+<article>
+
+  <h2 class="article-title  tag">Website_Overview</h2>
+
+  <div class="archive">
+    
+      <div class="post archive">
+        <div class="archive-post">
+          <time datetime="2025-02-04T15:08:35.000Z">
+            <a href="/2025/02/04/Website-Overview/">2025-02-04</a>
+          </time>
+          
+            <h3 class="archive-title"><a href="/2025/02/04/Website-Overview/"><span>Website_Overview</span></a></h3>
+          
+        </div>
+      </div>
+    
+    <nav class="pagination">
+  
+  
+</nav>
+  </div>
+
+</article>
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2025 lxcxjxhx
+    
+  </p>
+</footer>
+    
+    
+  </div>
+</div>
+</body>
+</html>
